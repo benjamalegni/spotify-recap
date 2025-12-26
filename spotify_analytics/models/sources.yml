@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: seeds
+    description: "Seed data loaded from CSV files"
+    schema: main_seed_data
+    tables:
+      - name: streaming_history_all
+        description: "Combined Spotify streaming history from all JSON files"
+        columns:
+          - name: ts
+            description: "Timestamp when the track/episode was played"
+          - name: platform
+            description: "Platform/device used (ios, android, etc.)"
+          - name: ms_played
+            description: "Milliseconds played"
+          - name: master_metadata_track_name
+            description: "Track name (for songs)"
+          - name: episode_name
+            description: "Episode name (for podcasts)"
+          - name: episode_show_name
+            description: "Podcast show name"

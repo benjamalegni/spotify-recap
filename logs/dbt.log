@@ -1,0 +1,147 @@
+[0m11:38:33.646400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8eb20501a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8eb1848cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8eb12b3ed0>]}
+
+
+============================== 11:38:33.656644 | 9b60670e-e0b1-478f-a1ef-096015fe9584 ==============================
+[0m11:38:33.656644 [info ] [MainThread]: Running with dbt=1.10.17
+[0m11:38:33.659163 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'printer_width': '80', 'empty': 'None', 'log_path': 'logs', 'static_parser': 'True', 'partial_parse': 'True', 'write_json': 'True', 'version_check': 'True', 'debug': 'False', 'log_cache_events': 'False', 'use_colors': 'True', 'target_path': 'None', 'quiet': 'False', 'profiles_dir': '/home/outer/.dbt', 'no_print': 'None', 'introspect': 'True', 'invocation_command': 'dbt init spotify_analytics', 'log_format': 'default', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m11:38:33.685565 [debug] [MainThread]: Starter project path: /home/outer/Documents/spotify-recap/venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m11:38:33.691784 [info ] [MainThread]: 
+Your new dbt project "spotify_analytics" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:38:33.693047 [info ] [MainThread]: Setting up your profile.
+[0m11:38:39.411978 [info ] [MainThread]: Profile spotify_analytics written to /home/outer/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m11:38:39.414003 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 5.9170322, "process_in_blocks": "0", "process_kernel_time": 0.209203, "process_mem_max_rss": "153692", "process_out_blocks": "72", "process_user_time": 2.869096}
+[0m11:38:39.415124 [debug] [MainThread]: Command `dbt init` succeeded at 11:38:39.414896 after 5.92 seconds
+[0m11:38:39.415968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8eb130be10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8eb1a04a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8eb116b570>]}
+[0m11:38:39.416945 [debug] [MainThread]: Flushing usage events
+[0m11:38:40.279901 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:12:53.488644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2035b782f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2035379090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2034df3ed0>]}
+
+
+============================== 12:12:53.491528 | 64e368ff-b5fc-4aa4-97c8-d57c50d94c31 ==============================
+[0m12:12:53.491528 [info ] [MainThread]: Running with dbt=1.10.17
+[0m12:12:53.492041 [debug] [MainThread]: running dbt with arguments {'empty': 'False', 'partial_parse': 'True', 'log_cache_events': 'False', 'fail_fast': 'False', 'introspect': 'True', 'log_path': 'logs', 'quiet': 'False', 'target_path': 'None', 'profiles_dir': '/home/outer/.dbt', 'printer_width': '80', 'static_parser': 'True', 'invocation_command': 'dbt run', 'version_check': 'True', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'cache_selected_only': 'False', 'warn_error': 'None', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m12:12:53.492513 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/outer/Documents/spotify-recap/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:12:53.493199 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.05401161, "process_in_blocks": "0", "process_kernel_time": 0.08055, "process_mem_max_rss": "100816", "process_out_blocks": "16", "process_user_time": 0.919768}
+[0m12:12:53.493587 [debug] [MainThread]: Command `dbt run` failed at 12:12:53.493507 after 0.05 seconds
+[0m12:12:53.493895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2034c495b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2034efec30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2034c945a0>]}
+[0m12:12:53.494202 [debug] [MainThread]: Flushing usage events
+[0m12:12:53.496166 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:14:31.120787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48ee8782f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48ee079090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48edaf3ed0>]}
+
+
+============================== 12:14:31.124090 | c8a0c611-702d-4e58-ba92-9e5daf13ae16 ==============================
+[0m12:14:31.124090 [info ] [MainThread]: Running with dbt=1.10.17
+[0m12:14:31.124597 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'invocation_command': 'dbt debug --profiles-dir /home/outer/.dbt', 'empty': 'None', 'partial_parse': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'introspect': 'True', 'version_check': 'True', 'fail_fast': 'False', 'write_json': 'True', 'profiles_dir': '/home/outer/.dbt', 'no_print': 'None', 'printer_width': '80', 'use_experimental_parser': 'False', 'use_colors': 'True', 'quiet': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'debug': 'False', 'target_path': 'None'}
+[0m12:14:31.132447 [info ] [MainThread]: dbt version: 1.10.17
+[0m12:14:31.132982 [info ] [MainThread]: python version: 3.13.11
+[0m12:14:31.133276 [info ] [MainThread]: python path: /home/outer/Documents/spotify-recap/venv/bin/python
+[0m12:14:31.133543 [info ] [MainThread]: os info: Linux-6.18.1-arch1-2-g14-x86_64-with-glibc2.42
+[0m12:14:31.183606 [info ] [MainThread]: Using profiles dir at /home/outer/.dbt
+[0m12:14:31.184026 [info ] [MainThread]: Using profiles.yml file at /home/outer/.dbt/profiles.yml
+[0m12:14:31.184430 [info ] [MainThread]: Using dbt_project.yml file at /home/outer/Documents/spotify-recap/dbt_project.yml
+[0m12:14:31.184738 [info ] [MainThread]: Configuration:
+[0m12:14:31.185014 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m12:14:31.185286 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m12:14:31.185546 [info ] [MainThread]: Required dependencies:
+[0m12:14:31.185831 [debug] [MainThread]: Executing "git --help"
+[0m12:14:31.188411 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:14:31.188776 [debug] [MainThread]: STDERR: "b''"
+[0m12:14:31.189105 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:14:31.189428 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m12:14:31.189833 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m12:14:31.190120 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "spotify_analytics", target "dev" invalid: '5432' is not of type 'integer'
+
+
+[0m12:14:31.190415 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/outer/Documents/spotify-recap/dbt_project.yml> not found
+
+[0m12:14:31.191143 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.11308372, "process_in_blocks": "64", "process_kernel_time": 0.086504, "process_mem_max_rss": "107600", "process_out_blocks": "16", "process_user_time": 0.966906}
+[0m12:14:31.191523 [debug] [MainThread]: Command `dbt debug` failed at 12:14:31.191448 after 0.11 seconds
+[0m12:14:31.191833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48ed8ad5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48ed88f770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48ed995260>]}
+[0m12:14:31.192152 [debug] [MainThread]: Flushing usage events
+[0m12:14:32.120936 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:14:33.346316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0dafa7c2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0daf279090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0daecf3ed0>]}
+
+
+============================== 12:14:33.349126 | 4bcffbae-485f-4bb3-b91d-ce980dd6bb23 ==============================
+[0m12:14:33.349126 [info ] [MainThread]: Running with dbt=1.10.17
+[0m12:14:33.349667 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'fail_fast': 'False', 'introspect': 'True', 'log_path': 'logs', 'profiles_dir': '/home/outer/.dbt', 'write_json': 'True', 'version_check': 'True', 'quiet': 'False', 'warn_error': 'None', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --profiles-dir /home/outer/.dbt', 'empty': 'False', 'use_colors': 'True', 'static_parser': 'True', 'cache_selected_only': 'False', 'partial_parse': 'True', 'log_cache_events': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'no_print': 'None', 'log_format': 'default'}
+[0m12:14:33.350119 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/outer/Documents/spotify-recap/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:14:33.350907 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.05223622, "process_in_blocks": "0", "process_kernel_time": 0.063605, "process_mem_max_rss": "100724", "process_out_blocks": "8", "process_user_time": 0.919282}
+[0m12:14:33.351351 [debug] [MainThread]: Command `dbt run` failed at 12:14:33.351250 after 0.05 seconds
+[0m12:14:33.351689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0daeb495b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0daedfec30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0daeb945a0>]}
+[0m12:14:33.352010 [debug] [MainThread]: Flushing usage events
+[0m12:14:34.066120 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:15:05.767572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87881682f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8787969090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87873e3ed0>]}
+
+
+============================== 12:15:05.770186 | 830826a5-ed73-4b1a-9adf-b7073da43ec0 ==============================
+[0m12:15:05.770186 [info ] [MainThread]: Running with dbt=1.10.17
+[0m12:15:05.770677 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'fail_fast': 'False', 'printer_width': '80', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'log_path': 'logs', 'invocation_command': 'dbt show', 'use_colors': 'True', 'quiet': 'False', 'log_format': 'default', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'debug': 'False', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'introspect': 'True', 'profiles_dir': '/home/outer/.dbt', 'write_json': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'target_path': 'None', 'version_check': 'True'}
+[0m12:15:05.771096 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/outer/Documents/spotify-recap/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:15:05.771833 [debug] [MainThread]: Resource report: {"command_name": "show", "command_success": false, "command_wall_clock_time": 0.047176287, "process_in_blocks": "0", "process_kernel_time": 0.073477, "process_mem_max_rss": "100592", "process_out_blocks": "0", "process_user_time": 0.915562}
+[0m12:15:05.772233 [debug] [MainThread]: Command `dbt show` failed at 12:15:05.772158 after 0.05 seconds
+[0m12:15:05.772548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87872355b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87874eec30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87872845a0>]}
+[0m12:15:05.772845 [debug] [MainThread]: Flushing usage events
+[0m12:15:06.221050 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:44:51.676370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff05067c2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff04fe7d090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff04f8f7ed0>]}
+
+
+============================== 12:44:51.680417 | 6a6b1c6f-1b70-44ad-a64b-3b509a6012dc ==============================
+[0m12:44:51.680417 [info ] [MainThread]: Running with dbt=1.10.17
+[0m12:44:51.680899 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'write_json': 'True', 'cache_selected_only': 'False', 'use_colors': 'True', 'empty': 'None', 'fail_fast': 'False', 'warn_error': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'invocation_command': 'dbt seed', 'indirect_selection': 'eager', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'profiles_dir': '/home/outer/.dbt', 'log_path': 'logs', 'log_format': 'default', 'log_cache_events': 'False', 'static_parser': 'True'}
+[0m12:44:51.681330 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/outer/Documents/spotify-recap/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:44:51.682210 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 0.048088614, "process_in_blocks": "920", "process_kernel_time": 0.063638, "process_mem_max_rss": "100836", "process_out_blocks": "8", "process_user_time": 0.900835}
+[0m12:44:51.682599 [debug] [MainThread]: Command `dbt seed` failed at 12:44:51.682524 after 0.05 seconds
+[0m12:44:51.682889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff04f7495b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff04fa02c30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff04f7985a0>]}
+[0m12:44:51.683208 [debug] [MainThread]: Flushing usage events
+[0m12:44:52.290059 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:38:45.318658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdff646c2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdff5c6d090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdff56e7ed0>]}
+
+
+============================== 07:38:45.321219 | 4f9b00de-e577-4e83-bc1b-506fa6730978 ==============================
+[0m07:38:45.321219 [info ] [MainThread]: Running with dbt=1.10.17
+[0m07:38:45.321700 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'log_path': 'logs', 'use_colors': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'warn_error': 'None', 'no_print': 'None', 'quiet': 'False', 'version_check': 'True', 'target_path': 'None', 'log_format': 'default', 'log_cache_events': 'False', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'empty': 'False', 'profiles_dir': '/home/outer/.dbt', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt run', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'use_experimental_parser': 'False'}
+[0m07:38:45.322099 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/outer/Documents/spotify-recap/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m07:38:45.322804 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.046591632, "process_in_blocks": "0", "process_kernel_time": 0.066156, "process_mem_max_rss": "100748", "process_out_blocks": "16", "process_user_time": 0.976577}
+[0m07:38:45.323175 [debug] [MainThread]: Command `dbt run` failed at 07:38:45.323105 after 0.05 seconds
+[0m07:38:45.323486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdff55395b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdff57f2c30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdff55885a0>]}
+[0m07:38:45.323808 [debug] [MainThread]: Flushing usage events
